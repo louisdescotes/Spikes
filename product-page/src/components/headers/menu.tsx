@@ -6,7 +6,7 @@ export default function Menu() {
       <div>
         <Image src={"/logo.svg"} width={70} height={40} alt="logo"/>
       </div>
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-10 font-semibold">
         <a href="#">SHOP</a>
         <a href="#">COLLECTIVE</a>
         <a href="#">DESIGNERS</a>
