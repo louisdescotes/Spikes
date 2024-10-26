@@ -5,9 +5,9 @@ import Text from "@/components/text";
 
 export default function page() {
   return (
-    <section className="w-screen h-screen">
+    <section className=" block w-screen h-screen">
       <Header />
-      <aside className="px-20">
+      <aside className="flex gap-10 flex-1 justify-between  h-full px-20">
         <Text />
         <Carousel />
       </aside>

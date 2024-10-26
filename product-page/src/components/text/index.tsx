@@ -8,7 +8,7 @@ import AddToCard from "../buttons/addToCard";
 
 export default function Text() {
   return (
-    <aside className="w-[45%]">
+    <aside className="w-5/12 flex-1">
       <Image src={"/svg/back.svg"} alt="arrow" width={24} height={24} className="pt-14"/>
       <p className=" text-[#17183B] text-sm font-semibold pt-8"><span className=" opacity-40">Chair </span> / Meryl Lounge Chair</p>
       <h1 className="text-5xl text-[#17183B] font-bold pt-[76px]">Meryl Lounge Chair</h1>
