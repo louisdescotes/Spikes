@@ -1,7 +1,10 @@
+"use client"
+
 import Header from "@/components/header";
 import { GridPattern } from "../public/grid-pattern";
 import Footer from "@/components/footer";
 import Card from "@/components/card";
+import Ellipse from "@/components/Ellipse";
 
 export default function Home() {
   return <main className="w-screen h-screen">
@@ -10,8 +13,10 @@ export default function Home() {
     <Header />
     <Footer />
     <section className="flex justify-center flex-col gap-4 h-screen w-full overflow-hidden">
-      <section className="absolute bg- flex justify-center flex-col gap-4 h-2/4 w-full overflow-hidden" />
-      <aside className="flex gap-3 items-center justify-center w-full overflow-hidden">
+    <Ellipse top={true}/>
+    <Ellipse top={false}/>
+      <section className="absolute mask-image-custom-gradient webkit-mask-image-custom-gradient z-50 flex justify-center flex-col gap-4 h-2/4 w-full overflow-hidden" />
+      <aside className="flex gap-3 items-center justify-center w-full overflow-hidden animate-marquee-vertical">
         <Card pp="picture-3" name="Shoguntoto" user="@thomasdev59" message="C'est une belle plateforme, les explications sont clairs, les maquettes professionnelles." />
         <Card pp="picture-2" name="Shoguntoto" user="@thomasdev59" message="Ezis répond à toutes les questions afin de nous aider le plus possible dans notre objectif." />
         <Card pp="picture-9" name="Hocine" user="@hocine" message="J'aime bien le concept d'avoir une communauté, Ezis est très à l'écoute et n'hésite pas à répondre aux questions." />
